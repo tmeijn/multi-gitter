@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.33.1](https://www.github.com/lindell/multi-gitter/compare/v0.33.0...v0.33.1) (2021-09-11)
+
+
+### Miscellaneous
+
+* added CODEOWNERS file ([7b85777](https://www.github.com/lindell/multi-gitter/commit/7b8577798fbcc3159dfc06d920ee5b33183f0ce9))
+
 ## [0.33.0](https://www.github.com/lindell/multi-gitter/compare/v0.32.0...v0.33.0) (2021-09-10)
 
 
