@@ -1,5 +1,64 @@
 # Changelog
 
+## [0.34.0](https://www.github.com/tmeijn/multi-gitter/compare/v0.33.0...v0.34.0) (2022-02-07)
+
+
+### Features
+
+* **gitlab:** respect project level squash setting ([#228](https://www.github.com/tmeijn/multi-gitter/issues/228)) ([b189661](https://www.github.com/tmeijn/multi-gitter/commit/b1896610c6f4f88099848f99163984fbf4de113f))
+* add possibility to add assignees to pull request ([#196](https://www.github.com/tmeijn/multi-gitter/issues/196)) ([6b685ba](https://www.github.com/tmeijn/multi-gitter/commit/6b685ba18ce7107e92984fd9654c9c1af274bf95))
+* add the ability to skip repos from the run command ([#197](https://www.github.com/tmeijn/multi-gitter/issues/197)) ([d4de4dc](https://www.github.com/tmeijn/multi-gitter/commit/d4de4dc5dc0d05726db2dabeb515303c21d53994))
+* added --conflict-strategy ([#210](https://www.github.com/tmeijn/multi-gitter/issues/210)) ([5dfd6d9](https://www.github.com/tmeijn/multi-gitter/commit/5dfd6d9fc877d06f905cbeb27e39305d16afee65))
+* added --ssh-auth option ([#215](https://www.github.com/tmeijn/multi-gitter/issues/215)) ([f5767a8](https://www.github.com/tmeijn/multi-gitter/commit/f5767a86c44562f3191eb8cff0d3084393ed1ac7))
+* added more information to the version command ([#198](https://www.github.com/tmeijn/multi-gitter/issues/198)) ([ebf4578](https://www.github.com/tmeijn/multi-gitter/commit/ebf457822693000fe04caf4c36a5db70c9feab6c))
+
+
+### Bug Fixes
+
+* **gitlab:** close MR instead of deleting it ([#230](https://www.github.com/tmeijn/multi-gitter/issues/230)) ([af2c2d9](https://www.github.com/tmeijn/multi-gitter/commit/af2c2d9b86a8cd0c6c09e3667a9f7c7689cf915c))
+* better logs when repositories are not used due to permissions ([#226](https://www.github.com/tmeijn/multi-gitter/issues/226)) ([668d0b0](https://www.github.com/tmeijn/multi-gitter/commit/668d0b0458988dc24de7beb4d087c2cccc7d3167))
+* censor http authentication header ([#185](https://www.github.com/tmeijn/multi-gitter/issues/185)) ([633a2cc](https://www.github.com/tmeijn/multi-gitter/commit/633a2ccc973070790b0cb644aa9029727a220e20))
+* fixed fury.io token in release ([9deb2d2](https://www.github.com/tmeijn/multi-gitter/commit/9deb2d258a6b84c8f002b4aaab0ffc8ca135540a))
+* fixed multi line commit message ([#222](https://www.github.com/tmeijn/multi-gitter/issues/222)) ([995a93c](https://www.github.com/tmeijn/multi-gitter/commit/995a93cf552300e3c4b580a0ffa2aeb3cdfd61a7))
+* make sure autocompletion works with settings from config files ([#217](https://www.github.com/tmeijn/multi-gitter/issues/217)) ([45e855c](https://www.github.com/tmeijn/multi-gitter/commit/45e855c314738f710092f2babb6a213727a63467))
+* **bitbucket:** ensure username is set ([#212](https://www.github.com/tmeijn/multi-gitter/issues/212)) ([a463709](https://www.github.com/tmeijn/multi-gitter/commit/a4637093e71c3b667afb58e67439bb2b3c9fe927))
+* make sure GitHub's secondary rate limit is not reached ([#207](https://www.github.com/tmeijn/multi-gitter/issues/207)) ([8a5fabd](https://www.github.com/tmeijn/multi-gitter/commit/8a5fabdc9e54bdfbba421a466bd323aae8114bdd))
+* **github:** fixed that the fetching of pullrequests always pull the latest pr ([#195](https://www.github.com/tmeijn/multi-gitter/issues/195)) ([aa33af8](https://www.github.com/tmeijn/multi-gitter/commit/aa33af834d71e7122955b5023ab028c2d5fa42f8))
+* **github:** ignore branch deletion error if branch is already deleted ([#189](https://www.github.com/tmeijn/multi-gitter/issues/189)) ([d63d041](https://www.github.com/tmeijn/multi-gitter/commit/d63d04184dc10d3c6538676dacdd63d973d06e02))
+* **gitlab:** only list projects with Merge Requests enabled ([#184](https://www.github.com/tmeijn/multi-gitter/issues/184)) ([5d45121](https://www.github.com/tmeijn/multi-gitter/commit/5d4512112715dbe9ce7cba214531ce93c8b1a360))
+
+
+### Dependencies
+
+* update github.com/gfleury/go-bitbucket-v1 commit hash to dff2223 ([f570ee5](https://www.github.com/tmeijn/multi-gitter/commit/f570ee5086369b50091f5ad21f6762d96d93782c))
+* update module code.gitea.io/sdk/gitea to v0.15.0 ([1b0ac09](https://www.github.com/tmeijn/multi-gitter/commit/1b0ac094015c4b398147c3fc8759e83462b656b7))
+* update module code.gitea.io/sdk/gitea to v0.15.1 ([c8b4ab8](https://www.github.com/tmeijn/multi-gitter/commit/c8b4ab8cf55ace9e4f4751b540ba2e0dc7fd2807))
+* update module github.com/google/go-github/v38 to v39 ([#191](https://www.github.com/tmeijn/multi-gitter/issues/191)) ([5088532](https://www.github.com/tmeijn/multi-gitter/commit/508853232485cd4dd4886f46fead14fa71d7ae59))
+* update module github.com/google/go-github/v39 to v39.2.0 ([45f20a0](https://www.github.com/tmeijn/multi-gitter/commit/45f20a0e070e71231d785d1bb12cc04ee0d0e2e2))
+* update module github.com/mitchellh/mapstructure to v1.4.3 ([ea97fa2](https://www.github.com/tmeijn/multi-gitter/commit/ea97fa2010378b353c0a43f832aced2054ae182d))
+* update module github.com/spf13/cobra to v1.3.0 ([afbe211](https://www.github.com/tmeijn/multi-gitter/commit/afbe21104568c9550e7cbaa48342ed5bcf3de3b8))
+* update module github.com/spf13/viper to v1.9.0 ([becff1f](https://www.github.com/tmeijn/multi-gitter/commit/becff1f7d6fd755565601fd6eb4d321cac6d54a2))
+* update module github.com/xanzy/go-gitlab to v0.51.1 ([78fb3dc](https://www.github.com/tmeijn/multi-gitter/commit/78fb3dca3b3d5e1aff66799814e3c4a92edda0d7))
+* update module github.com/xanzy/go-gitlab to v0.52.2 ([c88f791](https://www.github.com/tmeijn/multi-gitter/commit/c88f79152e1b99381fcc8de249149aa49089c77e))
+
+
+### Miscellaneous
+
+* added CODEOWNERS file ([7b85777](https://www.github.com/tmeijn/multi-gitter/commit/7b8577798fbcc3159dfc06d920ee5b33183f0ce9))
+* release 0.33.1 ([#182](https://www.github.com/tmeijn/multi-gitter/issues/182)) ([9ad0269](https://www.github.com/tmeijn/multi-gitter/commit/9ad0269cfd94e31105861168a390e54db51bebdb))
+* release 0.33.2 ([#186](https://www.github.com/tmeijn/multi-gitter/issues/186)) ([6212369](https://www.github.com/tmeijn/multi-gitter/commit/6212369ddd39a1cb0ae041ec06752fbb762c12e1))
+* release 0.33.3 ([#190](https://www.github.com/tmeijn/multi-gitter/issues/190)) ([df64360](https://www.github.com/tmeijn/multi-gitter/commit/df6436026dc5bba88b71052f18e254d5e7e542f4))
+* release 0.34.0 ([#199](https://www.github.com/tmeijn/multi-gitter/issues/199)) ([66c0060](https://www.github.com/tmeijn/multi-gitter/commit/66c0060c8c1891f89ebbfa8f0208eec56daf5138))
+* release 0.35.0 ([#201](https://www.github.com/tmeijn/multi-gitter/issues/201)) ([fbbdea2](https://www.github.com/tmeijn/multi-gitter/commit/fbbdea281501ffbb9fc24f65a4c4298112a1ccf8))
+* release 0.36.0 ([#203](https://www.github.com/tmeijn/multi-gitter/issues/203)) ([97aa91f](https://www.github.com/tmeijn/multi-gitter/commit/97aa91f8b531f477f542cffa9f12dbae2a030a72))
+* release 0.36.1 ([#208](https://www.github.com/tmeijn/multi-gitter/issues/208)) ([760ee3c](https://www.github.com/tmeijn/multi-gitter/commit/760ee3ca681467cde153f2e11fd05a99d7120f7c))
+* release 0.37.0 ([#213](https://www.github.com/tmeijn/multi-gitter/issues/213)) ([8e30ba9](https://www.github.com/tmeijn/multi-gitter/commit/8e30ba9cea00cf194f6db0412e11f6957fe8c5e8))
+* release 0.38.0 ([#216](https://www.github.com/tmeijn/multi-gitter/issues/216)) ([cd32051](https://www.github.com/tmeijn/multi-gitter/commit/cd320515ad7af0e492d0e7095f98a70ee02ac990))
+* release 0.38.1 ([#218](https://www.github.com/tmeijn/multi-gitter/issues/218)) ([e7b38e6](https://www.github.com/tmeijn/multi-gitter/commit/e7b38e6529e564383f382a41fd1972220108eecf))
+* release 0.38.2 ([#219](https://www.github.com/tmeijn/multi-gitter/issues/219)) ([e54dfbc](https://www.github.com/tmeijn/multi-gitter/commit/e54dfbccf3da56ebb22c5d37b4166b73329680e8))
+* release 0.38.3 ([#220](https://www.github.com/tmeijn/multi-gitter/issues/220)) ([12d9f50](https://www.github.com/tmeijn/multi-gitter/commit/12d9f50d7ef45ea504a63afedd4a13830ae4dffe))
+* release 0.39.0 ([#231](https://www.github.com/tmeijn/multi-gitter/issues/231)) ([5f3acc0](https://www.github.com/tmeijn/multi-gitter/commit/5f3acc0633736be9c6bcee55a2931007682c3109))
+
 ## [0.39.0](https://www.github.com/lindell/multi-gitter/compare/v0.38.3...v0.39.0) (2022-02-05)
 
 
